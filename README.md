@@ -1,16 +1,15 @@
-# flutterstarterkit
+# Flutter Starter Kit
 
-A new Flutter project.
+A feature ready start point for flexible & scalable flutter apps.
 
-## Getting Started
+[![GitHub stars](https://img.shields.io/github/stars/leoalbalah/FlutterStarterKit.git?style=for-the-badge)](https://github.com/leoalbalah/FlutterStarterKit.git/stargazers)
 
-This project is a starting point for a Flutter application.
+[![GitHub license](https://img.shields.io/github/license/leoalbalah/FlutterStarterKit.git?style=for-the-badge)](https://github.com/leoalbalah/FlutterStarterKit.git)
 
-A few resources to get you started if this is your first Flutter project:
+## Table of Content
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
+## Usage
 
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## Dependencies
+
+## License
