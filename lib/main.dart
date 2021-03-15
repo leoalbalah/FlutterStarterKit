@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutterstarterkit/logic/globals/Colors.dart';
-import 'package:flutterstarterkit/ui/pages/HomePage.dart';
+import 'package:flutterstarterkit/ui/pages/SplashPage.dart';
 import 'package:provider/provider.dart';
 import 'logic/providers/MyProvider.dart';
 
@@ -26,7 +26,7 @@ class MyApp extends StatelessWidget {
           brightness: Brightness.light,
           fontFamily: 'Raleway',
         ),
-        home: HomePage(),
+        home: SplashPage(),
       ),
     );
   }
