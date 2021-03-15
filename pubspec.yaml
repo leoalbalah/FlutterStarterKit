@@ -10,6 +10,10 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
+  shared_preferences: ^2.0.4 # Persistent storage for simple data.
+  permission_handler: ^6.1.0 # Add Support to request permissions and check their current status.
+  provider: ^5.0.0 # Google Official Plugin for State Managment.
+  package_info: ^2.0.0 # Provides information about the application package.
 
   cupertino_icons: ^1.0.2 # CupertinoIcons class for iOS style icons.
 
@@ -20,3 +24,19 @@ dev_dependencies:
 flutter:
 
   uses-material-design: true # Material Icons for Android style icons.
+
+  assets:
+    
+  # App Image Folder
+    - assets/images/
+
+  # App Font Folder
+    - assets/fonts/
+
+  # Font Definition
+  fonts:
+    - family: Raleway
+      fonts:
+        - asset: assets/fonts/Raleway-Regular.ttf
+        - asset: assets/fonts/Raleway-Thin.ttf
+          style: normal
