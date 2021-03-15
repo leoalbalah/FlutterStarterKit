@@ -19,8 +19,8 @@ A feature ready start point for flexible & scalable flutter apps.
 
 ### UI
 
-- [ ] Splash Screen
-- [ ] Custom Bottom Navbar
+- [X] Splash Screen
+- [ ] Provider Based Bottom Navbar
 - [X] Main Screen
 - [ ] Settings Page
 - [ ] Secundary Screen 

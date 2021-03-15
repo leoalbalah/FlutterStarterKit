@@ -2,7 +2,7 @@ import 'dart:async';
 import 'package:flutter/material.dart';
 import 'package:flutterstarterkit/logic/globals/Images.dart';
 import 'package:flutterstarterkit/logic/globals/Texts.dart';
-import 'package:flutterstarterkit/ui/pages/HomePage.dart';
+import 'package:flutterstarterkit/ui/widgets/BottomNavBar.dart';
 
 class SplashPage extends StatefulWidget {
   @override
@@ -41,6 +41,6 @@ class _SplashPageState extends State<SplashPage> {
 
   Future navigateFromSplash() async {
     Navigator.pushReplacement(
-        context, MaterialPageRoute(builder: (context) => HomePage()));
+        context, MaterialPageRoute(builder: (context) => BottomNavBar()));
   }
 }

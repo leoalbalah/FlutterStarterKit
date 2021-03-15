@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 class MyProvider with ChangeNotifier {
 
   int _count = 0;
+  int _tabState = -1;
 
   
   int get getCount => _count;
@@ -14,6 +15,13 @@ class MyProvider with ChangeNotifier {
 
   void decreaseCount(){
     _count -= 1;
+    notifyListeners();
+  }
+
+  int get tabState => _tabState;
+
+  set tabState(int newState) {
+    _tabState = newState;
     notifyListeners();
   }
 
