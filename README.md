@@ -13,16 +13,18 @@ A feature ready start point for flexible & scalable flutter apps.
 ### Logic
 
 - [X] Working provider
+- [X] Working package_info
 - [ ] Working shared_preferences
 - [ ] Working permission_Handler
-- [ ] Working package_info
+- [ ] Prevent Unwanted Exit
+- [ ] Add Alert Support
 
 ### UI
 
 - [X] Splash Screen
 - [X] Provider Based Bottom Navbar
 - [X] Main Screen
-- [ ] Settings Page
+- [X] Settings Page
 - [X] Secundary Screen 
 
 ### Tests
