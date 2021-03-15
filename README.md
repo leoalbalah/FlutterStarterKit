@@ -20,10 +20,10 @@ A feature ready start point for flexible & scalable flutter apps.
 ### UI
 
 - [X] Splash Screen
-- [ ] Provider Based Bottom Navbar
+- [X] Provider Based Bottom Navbar
 - [X] Main Screen
 - [ ] Settings Page
-- [ ] Secundary Screen 
+- [X] Secundary Screen 
 
 ### Tests
 
