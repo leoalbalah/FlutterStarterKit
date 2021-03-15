@@ -1,5 +1,7 @@
 import 'dart:async';
 import 'package:flutter/material.dart';
+import 'package:flutterstarterkit/logic/globals/Images.dart';
+import 'package:flutterstarterkit/logic/globals/Texts.dart';
 import 'package:flutterstarterkit/ui/pages/HomePage.dart';
 
 class SplashPage extends StatefulWidget {
@@ -8,9 +10,6 @@ class SplashPage extends StatefulWidget {
 }
 
 class _SplashPageState extends State<SplashPage> {
-  String developersInfo =
-      "Developed by TeaParty\nContact info: leoalbalah@gmail.com";
-
   @override
   void initState() {
     super.initState();
@@ -22,9 +21,20 @@ class _SplashPageState extends State<SplashPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      bottomNavigationBar: BottomAppBar(
+        elevation: 0,
+        color: Colors.white,
+        child: Padding(
+          padding: EdgeInsets.all(50),
+          child: Text(
+            xDeveloperInfo,
+            textAlign: TextAlign.center,
+          ),
+        ),
+      ),
       backgroundColor: Colors.white,
       body: Center(
-        child: Image.asset("assets/images/splash.png"),
+        child: xSplash,
       ),
     );
   }
