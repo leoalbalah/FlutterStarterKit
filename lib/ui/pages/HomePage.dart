@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutterstarterkit/logic/globals/Texts.dart';
+import 'package:flutterstarterkit/logic/handlers/PermissionsHandler.dart';
 import 'package:flutterstarterkit/logic/providers/MyProvider.dart';
 import 'package:provider/provider.dart';
 
@@ -14,6 +15,7 @@ class _MyHomePageState extends State<HomePage> {
   @override
   Widget build(BuildContext context) {
     var myProvider = Provider.of<MyProvider>(context);
+    checkPermitions();
     return Scaffold(
       appBar: AppBar(
         title: Text(xTitle),

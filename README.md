@@ -21,8 +21,8 @@ A feature ready start point for flexible & scalable flutter apps.
 
 - [X] Working provider
 - [X] Working package_info
+- [X] Working permission_handler
 - [ ] Working shared_preferences
-- [ ] Working permission_handler
 - [ ] Add Alert Support
 - [ ] Prevent Unwanted Exit
 
@@ -107,3 +107,7 @@ Project licensed under the [*MIT License*](https://github.com/leoalbalah/Flutter
 This Project is currently in development, so consider it *incomplete and subject to change* (scope, missing features, integrations, etc). The [**Features**](#features) Section keeps track of the progress.  
 Many Concepts used in this project are my favorites, but **is a matter of preference**, you can and should use your very own naming conventions, folder architecture, etc.  
 This project is tested on android, I have not tested the iOS or the web versions.
+
+## Author 
+
+You can contact me at leoalbalah@gmail.com for any help, suggestions, or collaborations.
