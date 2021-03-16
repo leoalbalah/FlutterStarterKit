@@ -66,7 +66,7 @@ Google Official Plugin for State Managment.
 
 I dont follow any flutter recomended naming convention, I code in a lot of languajes at the same time and I use the same for everyting, that makes my workflow easier and faster.
 
-* [CamelCase](https://en.wikipedia.org/wiki/Camel_case#:~:text=Camel%20case%20(sometimes%20stylized%20as,word%20starting%20with%20either%20case.) Notation for everything.
+* [CamelCase](https://en.wikipedia.org/wiki/Camel_case) Notation for everything.
 * Pages files start with UpperCase
 * Widgets start with LowerCase
 * Private vars start with _
