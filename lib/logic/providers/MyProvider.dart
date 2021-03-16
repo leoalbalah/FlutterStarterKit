@@ -18,11 +18,15 @@ class MyProvider with ChangeNotifier {
     notifyListeners();
   }
 
+  void setCount(int newCount) {
+    _count = newCount;
+    notifyListeners();
+  }
+
   int get tabState => _tabState;
 
   set tabState(int newState) {
     _tabState = newState;
     notifyListeners();
   }
-
 }

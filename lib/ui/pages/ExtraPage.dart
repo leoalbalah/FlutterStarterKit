@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutterstarterkit/logic/globals/Texts.dart';
+import 'package:flutterstarterkit/logic/handlers/SharedPrefsHandler.dart';
 import 'package:flutterstarterkit/logic/providers/MyProvider.dart';
 import 'package:provider/provider.dart';
 
@@ -11,6 +12,23 @@ class ExtraPage extends StatefulWidget {
 }
 
 class _MyExtraPageState extends State<ExtraPage> {
+
+  @override
+  void initState() {
+    loadPermanetCount();
+  }
+
+  Future<void> loadPermanetCount() async {
+    int permCount = await checkPermanentData();
+
+    if(permCount != 0){
+      WidgetsBinding.instance.addPostFrameCallback((_) async {
+        var myProvider = Provider.of<MyProvider>(context, listen: false);
+        myProvider.setCount(permCount);
+      });
+    }
+  }
+
   @override
   Widget build(BuildContext context) {
     var myProvider = Provider.of<MyProvider>(context);

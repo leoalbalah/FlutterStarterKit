@@ -1,6 +1,6 @@
 name: flutterstarterkit
 description: A feature ready start point for flexible & scalable flutter apps.
-version: 0.8.0
+version: 0.8.5
 
 publish_to: 'none' # Prevents the package from being publish to pub.dev
 
@@ -10,6 +10,7 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
+    
   shared_preferences: ^2.0.4 # Persistent storage for simple data.
   permission_handler: ^6.1.0 # Add Support to request permissions and check their current status.
   provider: ^5.0.0 # Google Official Plugin for State Managment.
