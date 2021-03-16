@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
-import 'package:flutterstarterkit/ui/widgets/SettingsTile.dart';
+import 'package:flutterstarterkit/ui/widgets/settingsTile.dart';
 
 // ignore: must_be_immutable
 class SettingsSection extends StatelessWidget {

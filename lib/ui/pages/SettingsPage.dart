@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutterstarterkit/logic/globals/Texts.dart';
-import 'package:flutterstarterkit/ui/widgets/SettingsList.dart';
-import 'package:flutterstarterkit/ui/widgets/SettingsSection.dart';
-import 'package:flutterstarterkit/ui/widgets/SettingsTile.dart';
+import 'package:flutterstarterkit/ui/widgets/settingsList.dart';
+import 'package:flutterstarterkit/ui/widgets/settingsSection.dart';
+import 'package:flutterstarterkit/ui/widgets/settingsTile.dart';
 import 'package:package_info/package_info.dart';
 
 class SettingsPage extends StatefulWidget {

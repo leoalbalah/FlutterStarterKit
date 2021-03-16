@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutterstarterkit/logic/globals/Colors.dart';
-import 'package:flutterstarterkit/ui/widgets/SettingsSection.dart';
+import 'package:flutterstarterkit/ui/widgets/settingsSection.dart';
 
 class SettingsList extends StatelessWidget {
   final List<SettingsSection> sections;
