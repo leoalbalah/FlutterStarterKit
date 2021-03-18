@@ -23,8 +23,8 @@ A feature ready start point for flexible & scalable flutter apps.
 - [X] Working package_info
 - [X] Working permission_handler
 - [X] Working shared_preferences
-- [ ] Add Alert Support
-- [ ] Prevent Unwanted Exit
+- [X] Add Alert Support
+- [X] Prevent Unwanted Exit
 
 ### UI
 

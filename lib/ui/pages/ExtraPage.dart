@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutterstarterkit/logic/globals/Texts.dart';
 import 'package:flutterstarterkit/logic/handlers/SharedPrefsHandler.dart';
 import 'package:flutterstarterkit/logic/providers/MyProvider.dart';
+import 'package:flutterstarterkit/ui/widgets/alert.dart';
 import 'package:provider/provider.dart';
 
 class ExtraPage extends StatefulWidget {
@@ -12,7 +13,6 @@ class ExtraPage extends StatefulWidget {
 }
 
 class _MyExtraPageState extends State<ExtraPage> {
-
   @override
   void initState() {
     loadPermanetCount();
@@ -21,7 +21,7 @@ class _MyExtraPageState extends State<ExtraPage> {
   Future<void> loadPermanetCount() async {
     int permCount = await checkPermanentData();
 
-    if(permCount != 0){
+    if (permCount != 0) {
       WidgetsBinding.instance.addPostFrameCallback((_) async {
         var myProvider = Provider.of<MyProvider>(context, listen: false);
         myProvider.setCount(permCount);
@@ -32,22 +32,28 @@ class _MyExtraPageState extends State<ExtraPage> {
   @override
   Widget build(BuildContext context) {
     var myProvider = Provider.of<MyProvider>(context);
-    return Scaffold(
-      appBar: AppBar(
-        title: Text(xExtra),
-      ),
-      body: Center(
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: <Widget>[
-            Text(
-              xActualCount,
-            ),
-            Text(
-              myProvider.getCount.toString(),
-              style: Theme.of(context).textTheme.headline4,
-            ),
-          ],
+    return WillPopScope(
+      onWillPop: () async {
+        bool action = await showconfirmAlertDialog(context);
+        return action;
+      },
+      child: Scaffold(
+        appBar: AppBar(
+          title: Text(xExtra),
+        ),
+        body: Center(
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: <Widget>[
+              Text(
+                xActualCount,
+              ),
+              Text(
+                myProvider.getCount.toString(),
+                style: Theme.of(context).textTheme.headline4,
+              ),
+            ],
+          ),
         ),
       ),
     );

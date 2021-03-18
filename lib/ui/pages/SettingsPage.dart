@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutterstarterkit/logic/globals/Texts.dart';
+import 'package:flutterstarterkit/ui/widgets/alert.dart';
 import 'package:flutterstarterkit/ui/widgets/settingsList.dart';
 import 'package:flutterstarterkit/ui/widgets/settingsSection.dart';
 import 'package:flutterstarterkit/ui/widgets/settingsTile.dart';
@@ -35,7 +36,8 @@ class _MySettingsPageState extends State<SettingsPage> {
   Widget build(BuildContext context) {
     return WillPopScope(
       onWillPop: () async {
-        //TODO
+        bool action = await showconfirmAlertDialog(context); 
+        return action;
       },
       child: Scaffold(
         appBar: AppBar(
