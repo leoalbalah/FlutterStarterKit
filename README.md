@@ -36,7 +36,9 @@ A feature ready start point for flexible & scalable flutter apps.
 
 ### Tests
 
-- [ ] Add Tests
+- [X] Add Unit Tests
+- [ ] Add Widget Tests
+- [ ] Add Integration Tests
 
 ## Usage
 
@@ -79,6 +81,7 @@ I dont follow any flutter recomended naming convention, I code in a lot of langu
 * Widgets start with LowerCase.
 * Private vars start with _.
 * Images and assets start with LowerCase.
+* Test files end with _test.
 
 ## Folder Arquitecture
 
@@ -97,6 +100,10 @@ The project includes a very scalable & organized folder architecture. It's cente
     * ui ==================> Contains the majority of the **visuals**.
         * pages ===========> Contains only **Pages** files
         * widgets =========> Contains only **Widgets** files
+* test
+    * unit ================> Contains **unit** tests files
+    * widget ==============> Contains **widget** tests files
+    * integration =========> Contains only **integration** tests files
 
 ## License
 
