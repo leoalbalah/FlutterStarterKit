@@ -22,7 +22,6 @@ class SettingsList extends StatelessWidget {
             futureOne = sections[index + 1];
           } catch (e) {}
 
-          // Add divider if title is null
           if (futureOne != null && futureOne.title != null) {
             current.showBottomDivider = false;
             return current;
