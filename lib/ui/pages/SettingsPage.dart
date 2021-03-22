@@ -22,6 +22,7 @@ class _MySettingsPageState extends State<SettingsPage> {
 
   @override
   void initState() {
+    super.initState();
     initPackageInfo();
   }
 

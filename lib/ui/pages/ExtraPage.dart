@@ -15,6 +15,7 @@ class ExtraPage extends StatefulWidget {
 class _MyExtraPageState extends State<ExtraPage> {
   @override
   void initState() {
+    super.initState();
     loadPermanetCount();
   }
 
